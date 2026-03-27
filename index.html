@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARP.dev | Criação de Sites</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #f5f5f5;
+}
+
+/* HEADER COM ANIMAÇÃO */
+
+header {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #121212, #1a1a1a);
+}
+
+header h1 {
+    font-size: 52px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+}
+
+header span {
+    color: #d4af37;
+}
+
+header p {
+    margin-top: 15px;
+    color: #ccc;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeUp 1.3s ease forwards;
+}
+
+.buttons {
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeUp 1.6s ease forwards;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 28px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #d4af37;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: #c59d2f;
+    transform: scale(1.05);
+}
+
+.btn-outline {
+    border: 1px solid #d4af37;
+    color: #d4af37;
+}
+
+.btn-outline:hover {
+    background: #d4af37;
+    color: black;
+}
+
+/* SEÇÕES COM ANIMAÇÃO */
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border: 1px solid rgba(212,175,55,0.2);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f0f0f;
+    font-size: 14px;
+    color: #888;
+}
+
+/* KEYFRAME ANIMAÇÃO */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 70px 20px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .btn {
+        display: block;
+        width: 95%;
+        margin: 10px auto;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+}
+
+/* TEXTO HERO MELHOR */
+.hero-text {
+    margin-top: 15px;
+    color: #bbb;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* BOTÕES MAIS MODERNOS */
+.btn {
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(212,175,55,0.2);
+}
+
+/* EFEITO DE TOQUE (mobile) */
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* SCROLL MAIS SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CARDS MAIS PREMIUM */
+.card {
+    backdrop-filter: blur(8px);
+}
+
+/* ANIMAÇÃO MAIS RÁPIDA */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ARP<span>.dev</span></h1>
+
+    <p class="hero-text">
+        Seu negócio pode estar perdendo clientes todos os dias.
+        Tenha um site profissional que atrai, convence e gera resultados.
+    </p>
+
+    <div class="buttons">
+        <a href="https://instagram.com/arp.dev" class="btn btn-primary">Solicitar orçamento</a>
+        <a href="mailto:arpdev@hotmail.com" class="btn btn-outline">Enviar e-mail</a>
+    </div>
+</header>
+
+<section>
+    <h2>Sobre a ARP.dev</h2>
+    <p style="max-width: 700px; margin: auto; color: #ccc;">
+        A ARP.dev é especializada na criação de sites profissionais focados em resultado.
+        Nosso objetivo é ajudar empresas a se posicionarem no digital, transmitirem mais credibilidade
+        e conquistarem novos clientes através da internet.
+
+        <br><br>
+
+        Mais do que um site bonito, desenvolvemos soluções estratégicas que realmente fazem diferença
+        no crescimento do seu negócio.
+    </p>
+</section>
+
+<section>
+    <h2>O que fazemos</h2>
+    <div class="cards">
+        <div class="card">Landing Pages de Alta Conversão</div>
+        <div class="card">Sites Institucionais Profissionais</div>
+        <div class="card">Design Responsivo (Mobile)</div>
+    </div>
+</section>
+
+<section>
+    <h2>Por que ter um site?</h2>
+    <div class="cards">
+        <div class="card">Aumenta suas vendas</div>
+        <div class="card">Mais credibilidade</div>
+        <div class="card">Disponível 24h</div>
+    </div>
+</section>
+
+<section>
+    <h2>Vamos tirar seu projeto do papel?</h2>
+    <p style="color:#ccc;">Entre em contato e descubra como um site profissional pode transformar seu negócio.</p>
+
+    <div class="buttons">
+        <a href="https://instagram.com/arp.dev" class="btn btn-primary">Solicitar orçamento</a>
+        <a href="mailto:arpdev@hotmail.com" class="btn btn-outline">Enviar e-mail</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ARP.dev</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+function mostrarSections() {
+    const trigger = window.innerHeight * 0.9;
+
+    sections.forEach((section, index) => {
+        const top = section.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            setTimeout(() => {
+                section.classList.add("show");
+            }, index * 100);
+        }
+    });
+}
+
+window.addEventListener("load", mostrarSections);
+window.addEventListener("scroll", mostrarSections);
+</script>
+</body>
+</html>
